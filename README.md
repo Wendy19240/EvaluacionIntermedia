@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Sistema de Evaluación Estudiantil
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un sistema básico de evaluación estudiantil que permite a los profesores crear evaluaciones con preguntas y respuestas.
 
-## Available Scripts
+## Funcionalidades Principales
 
-In the project directory, you can run:
+1. **Creación de Evaluaciones:**
+   - El sistema permite a los profesores crear nuevas evaluaciones.
+   - Cada evaluación debe contener preguntas con opciones de respuesta.
 
-### `npm start`
+## Tecnologías Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React
+- **Backend:** Express
+- **Base de Datos:** MongoDB
+- **Estilos:** CSS (o styled-components)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Configuración y Ejecución
 
-### `npm test`
+### Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Ve al directorio `backend`:
 
-### `npm run build`
+    ```bash
+    cd backend
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Instala las dependencias:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    npm install
+    ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Inicia el servidor backend:
 
-### `npm run eject`
+    ```bash
+    node index.js
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   O, usando nodemon:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npx nodemon index.js
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   El servidor estará disponible en `http://localhost:3001`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Frontend
 
-## Learn More
+1. Ve al directorio `frontend`:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    cd frontend
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Instala las dependencias:
 
-### Code Splitting
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Inicia la aplicación React:
 
-### Analyzing the Bundle Size
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   La aplicación estará disponible en `http://localhost:3000`.
 
-### Making a Progressive Web App
+## Uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+1. Abre tu navegador y accede a `http://localhost:3000`.
+2. Utiliza la interfaz para crear evaluaciones.
+3. Visualiza la información de las evaluaciones creadas.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¡Listo! Ahora tienes un sistema de evaluación estudiantil básico en funcionamiento.
